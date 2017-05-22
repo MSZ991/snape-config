@@ -16,9 +16,8 @@ $ npm install --save snape-config
 const config = require('snape-config');
 
 config.addToConfig({a: 'b'}, (err, data) => {
-	console.log(data)
+    console.log(data)
 })
-//=> 'unicorns & rainbows'
 ```
 
 
