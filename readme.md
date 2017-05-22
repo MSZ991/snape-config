@@ -15,7 +15,9 @@ $ npm install --save snape-config
 ```js
 const config = require('snape-config');
 
-electronAppConfig('unicorns');
+config.addToConfig({a: 'b'}, (err, data) => {
+	console.log(data)
+})
 //=> 'unicorns & rainbows'
 ```
 
